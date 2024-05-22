@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura Geek</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="./assets/coracoes.png" alt="imagem logo">
+            <h2>AluraGeek</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container-principal">
+            <!-- seção de produtos -->
+            <section class="produtos">
+                <h1>MEUS PRODUTOS:</h1>
+                <div data-produtos class="card__geral" id="erro">
+                </div>
+
+                
+            </section>
+            <!-- seção de adicionar produtos -->
+            <section class="adicionar-produtos">
+                <h1>ADICIONAR<br>PRODUTO</h1>
+                <form data-form="">
+                    <input data-nome type="text" name="nome" id="nome" placeholder="Nome..." required minlength="2" maxlength="18">
+                    <input data-preco type="text" name="valor" id="valor" placeholder="Valor..." required>
+                    <input data-imagem type="text" name="imagem" id="imagem" placeholder="URl da imagem..." required>
+                    <div class="botoes">
+                        <button class="btn-guardar botoes-form" type="submit">Guardar</button>
+                        <button class="btn-limpar botoes-form" type="reset">limpar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="logo-rodape">
+            <img src="./assets/coracoes.png" alt="imagem logo">
+            <h2>AluraGeek</h2>
+        </div>
+        <p class="paragrafo__rodape1">Desenvolvido por Gamaliel Gomes</p>
+        <p class="paragrafo__rodape2">Alura Latam 2024</p>
+    </footer>
+    <script type="module" src="js/controles/main.js"></script>
+</body>
+</html>
